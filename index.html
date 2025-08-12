@@ -27,8 +27,8 @@
             <p>Hola, soy <span class="highlight">Brian </span>👋🏼</p>
             <h1>Desarrollador Backend & Frontend</h1>
             <p>Soy desarrollador freelance Full Stack Junior. Me apasiona crear sitios web modernos y funcionales que ayuden a los usuarios y empresas a destacar.</p>
-            <button class="btn">Descargar CV</button>
-            <button class="btn">Contactar</button>
+            <button class="btn" onclick="window.open('./assets/docs/CV_Brian_Battauz.pdf', '_blank')">Descargar CV</button>
+            <button class="btn" onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })">Contactar</button>
         </div>
         <img src="./assets/images/foto_perfil.png" alt="Foto de perfil" class="perfil-img">
     </section>
@@ -59,8 +59,58 @@
         </div>
     </section>
 
-    <section id="sobre-mi">
-    <div class="seccion-titulo">Experiencia</div>
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="seccion-titulo">Habilidades</div>
+        <div class="habilidades">
+            <div>
+                <h4>Frontend</h4>
+                <ul>
+                    <li>JavaScript (ES6+)</li>
+                    <li>ReactJS</li>
+                    <li>NextJS</li>
+                    <li>CSS3 / TailwindCSS</li>
+                    <li>HTML5</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Backend</h4>
+                <ul>
+                    <li>Python (FastAPI)</li>
+                    <li>Java (Spring Boot)</li>
+                    <li>C# (.NET)</li>
+                    <li>APIs RESTful</li>
+                    <li>Despliegue en Vercel y Render</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Bases de Datos</h4>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>SQL Server</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Diseño Web</h4>
+                <ul>
+                    <li>Diseño UI/UX</li>
+                    <li>Diseño adaptable (Responsive Design)</li>
+                    <li>Wireframing</li>
+                    <li>Investigación de usuarios</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Soft Skills</h4>
+                <ul>
+                    <li>Comunicación efectiva</li>
+                    <li>Colaboración y trabajo en equipo</li>
+                    <li>Adaptabilidad y compromiso</li>
+                    <li>Resolución de problemas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="seccion-titulo">Experiencia</div>
         <div class="experiencia experiencia-list">
             <div class="compania">Freelance</div>
             <div>
@@ -72,61 +122,11 @@
                 </ul>
             </div>
         </div>
-        <div class="seccion-titulo" style="margin-top:3rem;">Habilidades</div>
-            <div class="habilidades">
-                <div>
-                    <h4>Frontend</h4>
-                    <ul>
-                        <li>JavaScript (ES6+)</li>
-                        <li>ReactJS</li>
-                        <li>NextJS</li>
-                        <li>CSS3 / TailwindCSS</li>
-                        <li>HTML5</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Backend</h4>
-                    <ul>
-                        <li>Python (FastAPI)</li>
-                        <li>Java (Spring Boot)</li>
-                        <li>C# (.NET)</li>
-                        <li>APIs RESTful</li>
-                        <li>Despliegue en Vercel y Render</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Bases de Datos</h4>
-                    <ul>
-                        <li>PostgreSQL</li>
-                        <li>SQL Server</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Diseño Web</h4>
-                    <ul>
-                        <li>Diseño UI/UX</li>
-                        <li>Diseño adaptable (Responsive Design)</li>
-                        <li>Wireframing</li>
-                        <li>Investigación de usuarios</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Soft Skills</h4>
-                    <ul>
-                        <li>Comunicación efectiva</li>
-                        <li>Colaboración y trabajo en equipo</li>
-                        <li>Adaptabilidad y compromiso</li>
-                        <li>Resolución de problemas</li>
-                    </ul>
-                </div>
-            </div>
-
-        <div class="seccion-titulo" style="margin-top:3rem;">Mi Historia.</div>
+        <div class="seccion-titulo">Mi Historia.</div>
         <div class="historia">
             Mi camino como desarrollador comenzó en 2024, trabajando en <a href="#">freelance</a> para clientes de todo el mundo. Actualmente busco oportunidades para seguir creciendo y aportar valor.
         </div>
+
     </section>
 
     <section id="contacto">
