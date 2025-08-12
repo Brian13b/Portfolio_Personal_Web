@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Nicolas Battauz - Portfolio Web</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/images/icono.png">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">Brian Battauz</div>
+        <div class="logo">BrianBattauzDev</div>
         <nav>
             <a href="#inicio" class="activo">Inicio</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#contacto">Contacto</a>
         </nav>
+        <button class="btn-mode" id="mode-toggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
     </header>
 
     <section id="inicio" class="perfil">
-        <img src="./assets/images/foto_perfil.jpg" alt="Foto de perfil" class="perfil-img">
         <div class="perfil-info">
-            <h1>Hola, soy <span class="highlight">Brian</span><br>Frontend & Backend Developer</h1>
+            <p>Hola, soy <span class="highlight">Brian </span>👋🏼</p>
+            <h1>Desarrollador Backend & Frontend</h1>
             <p>Soy desarrollador freelance Full Stack Junior. Me apasiona crear sitios web modernos y funcionales que ayuden a los usuarios y empresas a destacar.</p>
             <button class="btn">Descargar CV</button>
             <button class="btn">Contactar</button>
         </div>
+        <img src="./assets/images/foto_perfil.png" alt="Foto de perfil" class="perfil-img">
     </section>
 
     <section id="proyectos">
@@ -57,20 +62,13 @@
     <section id="sobre-mi">
     <div class="seccion-titulo">Experiencia</div>
         <div class="experiencia experiencia-list">
-            <div class="compania">Empresa 1</div>
+            <div class="compania">Freelance</div>
             <div>
-                <div class="rol">desarrollador @ Empresa 1</div>
+                <div class="rol">Desarrollador</div>
                 <ul>
-                    <li>Desarrollé aplicaciones web interactivas para Empresa 1 </li>
+                    <li>Desarrollé aplicaciones web interactivas para clientes</li>
                     <li>Mejoré la experiencia de usuario</li>
                     <li>Contribuí en el framework para desarrolladores</li>
-                </ul>
-            </div>
-            <div class="compania">Empresa 2</div>
-            <div>
-                <div class="rol">Frontend Developer</div>
-                <ul>
-                    <li>Implementé diseños adaptables y componentes de interfaz</li>
                 </ul>
             </div>
         </div>
@@ -153,5 +151,7 @@
         </div>
         <div>©2025 Brian Battauz. Todos los derechos reservados.</div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
