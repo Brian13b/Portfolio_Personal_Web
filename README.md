@@ -40,7 +40,7 @@ Soy una persona proactiva, enfocada en la calidad del código y la escalabilidad
 Portfolio_Personal_Web/
 ├── index.html
 ├── css/
-│   └── style.css
+│   └── styles.css
 ├── js/
 │   └── script.js
 ├── assets/
