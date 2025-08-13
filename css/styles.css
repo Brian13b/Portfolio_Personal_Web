@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --primary: #264653;
   --primary-light: #3c6677;
@@ -175,7 +179,7 @@ section {
 .proyecto-card {
   background: var(--gray);
   border-radius: var(--radius);
-  box-shadow: 0 2px 12px rgba(38, 70, 83, 0.07);
+  box-shadow: 0 2px 12px rgba(38, 70, 83, 0.1);
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -187,7 +191,7 @@ section {
 }
 .proyecto-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 8px 24px rgba(38, 70, 83, 0.18);
+  box-shadow: 0 8px 24px rgba(38, 70, 83, 0.2);
   border-color: var(--primary);
 }
 
@@ -206,7 +210,7 @@ section {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(38, 70, 83, 0.09);
+  box-shadow: 0 2px 8px rgba(38, 70, 83, 0.1);
 }
 
 .proyecto-card h3 {
@@ -243,21 +247,24 @@ section {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.imagen-container{
+.imagen-container {
+  flex: 1 1 calc(25% - 1rem); 
+  max-width: calc(25% - 1rem);
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  box-shadow: 0 2px 12px rgba(38, 70, 83, 0.1);
   border: 2px solid var(--primary-light);
   background-color: var(--gray);
   border-radius: 8px;
-  width: 15%;
-  height: 45px;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
 .imagen-container:hover {
-  background-color: var(--secondary); 
+  border: 2px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(38, 70, 83, 0.2);
   transform: translateY(-3px);
 }
 .imagen-container img {
@@ -369,10 +376,25 @@ section {
 .contacto-lista ul {
   padding: 0 20px;
 }
-
 .contacto-lista li {
   margin-bottom: 0.5rem;
   color: var(--text-light);
+}
+.contacto-redes {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.contacto-redes a {
+  color: var(--text-muted);
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.contacto-redes a:hover {
+  color: var(--primary); 
 }
 
 .contacto-form {
@@ -432,48 +454,141 @@ footer a:hover {
 
 /* Responsive */
 @media (max-width: 1100px) {
+  header {
+    padding: 2rem 3vw;
+  }
+
+  section {
+    margin: 3rem 3vw;
+  }
+
+  footer {
+    padding: 2rem 3vw;
+  }
+
   .perfil {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
   }
+
   .perfil-img {
-    margin-bottom: 1rem;
+    width: 250px;
+    height: 250px;
   }
-  section {
-    margin: 3rem 3vw;
+
+  .experiencia-list {
+    grid-template-columns: 1fr;
   }
-  header {
-    padding: 2rem 3vw 0 3vw;
+
+  .contacto-container {
+    grid-template-columns: 1fr;
   }
-  footer {
-    padding: 2rem 3vw;
+
+  .imagen-container {
+    flex: 1 1 calc(33.33% - 1rem);
+    max-width: calc(33.33% - 1rem);
   }
 }
 
-@media (max-width: 700px) {
-  header, .perfil, section, footer {
-    padding: 1rem 2vw;
-    margin: 0;
+@media (max-width: 768px) {
+  .perfil-img {
+    width: 180px;
+    height: 180px;
   }
+
+  .perfil-info h1 {
+    font-size: 2rem;
+  }
+
   .seccion-titulo {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
+
+  .imagen-container {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .btn-mode {
+    align-self: flex-end;
+  }
+
   .proyectos {
     grid-template-columns: 1fr;
   }
-  .habilidades {
-    grid-template-columns: 1fr;
+
+  .contacto-datos {
+    flex-direction: column;
   }
+
+  .contacto-datos div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header,
+  section,
+  footer {
+    padding: 1rem 2vw;
+    margin: 0;
+  }
+
   .perfil-img {
     width: 120px;
     height: 120px;
-    box-shadow: 0 0 0 5px var(--primary-light);
+    border-width: 4px;
   }
+
   .perfil-info h1 {
     font-size: 1.5rem;
   }
-  .contacto-wrapper {
-    grid-template-columns: 1fr;
+
+  .seccion-titulo {
+    font-size: 1.4rem;
+  }
+
+  .proyecto-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .imagen-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .contacto-redes {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .contacto-form {
+    padding: 1rem;
+  }
+
+  .contacto-form input,
+  .contacto-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
   }
 }

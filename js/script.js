@@ -30,14 +30,14 @@ document.querySelectorAll('nav a, .footer-links a').forEach(link => {
 });
 
 // Resaltar sección activa en el menú
-const sections = document.querySelectorAll('section');
+const secciones = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav a');
 window.addEventListener('scroll', () => {
   let current = '';
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 80;
-    if(window.scrollY >= sectionTop) {
-      current = section.getAttribute('id');
+  secciones.forEach(seccion => {
+    const seccionTop = seccion.offsetTop - 80;
+    if(window.scrollY >= seccionTop) {
+      current = seccion.getAttribute('id');
     }
   });
   navLinks.forEach(link => {
