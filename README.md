@@ -1,67 +1,80 @@
-# 💼 Portfolio Web - Brian Nicolas Battauz
+# 🌐 Portfolio - Brian Nicolas Battauz
 
-Bienvenido/a a mi portfolio personal. Este sitio fue creado con HTML, CSS y JavaScript para mostrar quién soy, mis habilidades como desarrollador web, y algunos de los proyectos que he realizado.
+Este es mi **portfolio web personal**, desarrollado para mostrar mis proyectos, habilidades y experiencia como **desarrollador Full Stack Junior**.  
+Incluye un diseño moderno, adaptable y funcional, con modo oscuro, animaciones y una sección de contacto interactiva.
 
-## 🌐 Demo en vivo
-
-👉 [Ver sitio online](https://Brian13b.github.io/Portfolio_Personal_Web/)
-
-## 👨‍💻 Sobre mí
-
-Soy Brian Battauz, **desarrollador backend** con experiencia en el desarrollo de **aplicaciones fullstack**, utilizando tecnologías modernas tanto del lado del servidor como del cliente.
-
-En backend, trabajo principalmente con **C#, Java y Python**, aplicando buenas prácticas como los principios SOLID y metodologías ágiles como Scrum. He desarrollado APIs RESTful utilizando frameworks como **.NET, Spring Boot y FastAPI**, integrando bases de datos como SQL Server, MySQL, PostgreSQL y MongoDB.
-
-En frontend, tengo experiencia creando interfaces dinámicas y modernas con **React** y estilos personalizados con Tailwind CSS. También tengo conocimientos sólidos en **HTML, CSS y JavaScript**.
-
-Soy una persona proactiva, enfocada en la calidad del código y la escalabilidad de las soluciones, con entusiasmo por aprender y seguir creciendo profesionalmente en el mundo del desarrollo de software.
-
-## 🛠️ Tecnologías utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- Git & GitHub
-- GitHub Pages (para publicación)
-
-## 🧩 Secciones del sitio
-
-- **Inicio y navegación**
-- **Presentación personal**
-- **Proyectos destacados**
-- **Experiencia laboral o académica**
-- **Habilidades técnicas**
-- **Formulario de contacto**
-- **Redes sociales y descarga de CV**
-
-## 📂 Estructura del proyecto
-
-```
-Portfolio_Personal_Web/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── assets/
-│   ├── images/
-│   └── cv/
-└── README.md
-```
-
-## 📸 Capturas del sitio
-
-## 🚀 Funcionalidades implementadas
-
-
-## 📫 Contacto
-
-Podés contactarme a través de:
-
-- [LinkedIn](https://linkedin.com/in/brianbattauz)
-- [GitHub](https://github.com/Brian13b)
-- Correo: brian.nbattauz@gmail.com
+![Captura del Portfolio](./assets/images/screenshot_modo_oscuro.jpg)
 
 ---
 
-© 2025 Brian Nicolas Battauz
+## 🚀 Tecnologías Utilizadas
+
+- **Frontend:**  
+  - HTML5  
+  - CSS3  
+  - JavaScript  
+  - [Font Awesome](https://fontawesome.com/) (iconos)
+  
+- **Despliegue:**  
+  - GitHub Pages
+
+---
+
+## ✨ Características
+
+- **Diseño responsive** adaptable a móviles, tablets y escritorio.  
+- **Modo oscuro** activable con un botón.  
+- **Animaciones y efectos** en botones, cards y navegación.  
+- **Secciones principales:**
+  - Inicio con presentación personal.
+  - Proyectos destacados con imágenes y enlaces.
+  - Habilidades con iconos de tecnologías.
+  - Experiencia laboral.
+  - Formulario de contacto funcional (diseño).
+- **Menú móvil desplegable** con scroll suave.
+- **Links a redes sociales** (GitHub, LinkedIn, WhatsApp, Email).
+
+---
+
+## 📂 Estructura del Proyecto
+
+```bash
+📦 portfolio-brian-battauz
+ ┣ 📂 assets
+ ┃ ┣ 📂 images        # Imágenes del portfolio
+ ┃ ┣ 📂 logos         # Iconos de tecnologías
+ ┃ ┗ 📂 cv            # CV en PDF
+ ┣ 📂 css
+ ┃ ┗ styles.css       # Estilos principales
+ ┣ 📂 js
+ ┃ ┗ script.js        # Lógica del modo oscuro, scroll y menú
+ ┣ index.html         # Página principal
+ ┗ README.md          # Documentación del proyecto
+```
+
+---
+
+## 🖼️ Vista Previa
+
+Puedes visitar el portfolio online aquí:  
+🔗 **[Portfolio de Brian Battauz](https://brian13b.github.io/portfolio-brian-battauz/)**
+
+---
+
+## 📬 Contacto
+
+Si deseas trabajar conmigo o tienes alguna propuesta:
+
+- **Email:** [brian.nbattauz@gmail.com](mailto:brian.nbattauz@gmail.com)
+- **WhatsApp:** [Enviar mensaje](https://wa.me/3434676232?text=Hola%20quiero%20más%20información)
+- **LinkedIn:** [Perfil](https://www.linkedin.com/in/brian-battauz-75691a217/)
+- **GitHub:** [@Brian13b](https://github.com/Brian13b)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT.  
+Puedes usarlo, modificarlo y distribuirlo libremente, pero manteniendo la atribución al autor original.
+
+---
