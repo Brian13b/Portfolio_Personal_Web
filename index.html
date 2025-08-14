@@ -11,15 +11,18 @@
 <body>
     <header>
         <div class="logo">BrianBattauz.Dev</div>
-        <nav>
+
+        <nav id="nav">
             <a href="#inicio" class="activo">Inicio</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#contacto">Contacto</a>
         </nav>
-        <button class="btn-mode" id="mode-toggle">
-            <i class="fa-solid fa-moon"></i>
-        </button>
+
+        <div class="header-controls">
+            <button class="btn-mode" id="mode-toggle"><i class="fa fa-moon"></i></button>
+            <button class="menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></button>
+        </div>
     </header>
 
     <section id="inicio" class="perfil">
@@ -27,7 +30,7 @@
             <p>Hola, soy <span class="highlight">Brian </span>👋🏼</p>
             <h1>Desarrollador Backend & Frontend</h1>
             <p>Soy desarrollador freelance Full Stack Junior. Me apasiona crear sitios web modernos y funcionales que ayuden a los usuarios y empresas a destacar.</p>
-            <button class="btn" onclick="window.open('./assets/docs/CV_Brian_Battauz.pdf', '_blank')">Descargar CV</button>
+            <button class="btn" onclick="window.open('./assets/cv/CV_Brian_Battauz_Programador.pdf', '_blank')">Ver CV</button>
             <button class="btn" onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })">Contactar</button>
         </div>
         <img src="./assets/images/foto_perfil.png" alt="Foto de perfil" class="perfil-img">
@@ -246,6 +249,6 @@
         <div>©2025 Brian Battauz. Todos los derechos reservados.</div>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 </body>
 </html>
