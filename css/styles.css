@@ -246,6 +246,28 @@ section {
   padding-left: 1rem;
 }
 
+.ver-mas {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.ver-mas a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--primary-light);
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.ver-mas a:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(38, 70, 83, 0.2);
+  border-color: var(--primary);
+}
+
 /* Sobre Mi */
 .habilidades {
   display: flex;
